@@ -1,0 +1,12 @@
+# Never commit downloaded benchmark data, caches, model bundles, or environments.
+data/
+datasets/
+*.parquet
+*.pt
+*.pth
+*.onnx
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PCB1 experiment — selected outcomes</title>
+<style>
+  body { max-width: 900px; margin: 3rem auto; padding: 0 1.25rem; color: #292629; font: 16px/1.55 system-ui, sans-serif; }
+  h1 { line-height: 1.15; }
+  table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+  th, td { padding: .65rem; border-bottom: 1px solid #ddd; text-align: left; }
+  th { color: #31584a; }
+  .note { padding: 1rem; border-left: 4px solid #90a583; background: #f6f8f4; }
+</style>
+<body>
+<h1>Selected PCB1 experiment outcomes</h1>
+<p class="note"><strong>Benchmark evidence only.</strong> This archive does not include the VisA images. The IDs below refer to the source experiment split; see <a href="failure_examples.json">failure_examples.json</a> for recorded scores and decisions. Heatmap values were display-scaled and are not probabilities or severity estimates.</p>
+<table>
+<thead><tr><th>Outcome</th><th>Image IDs</th><th>What it shows</th></tr></thead>
+<tbody>
+<tr><td>Missed defects</td><td>test_0070, test_0025, test_0037</td><td>Defective test examples with no flag from reference matching.</td></tr>
+<tr><td>False flags</td><td>test_0125, test_0194, test_0119</td><td>Dataset-normal examples flagged by the model.</td></tr>
+<tr><td>Caught defects</td><td>test_0073, test_0003, test_0032</td><td>Examples flagged as defective in the experiment.</td></tr>
+<tr><td>Normal, no flag</td><td>test_0130, test_0142, test_0152</td><td>Dataset-normal examples that were not flagged.</td></tr>
+</tbody></table>
+<p>For aggregate results and limits, see the <a href="EXPERIMENT_REPORT.md">experiment report</a> and <a href="../PROTOCOL.md">frozen protocol</a>.</p>
+</body>
+</html>
